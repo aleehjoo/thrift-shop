@@ -1,25 +1,45 @@
-import React from 'react'
+import React from "react";
 
 const Header = () => {
     return (
-        <nav className="w-full p-4 flex justify-between items-center bg-gray-100">
-            <div className="text-xl font-bold">Clothing Co.</div>
+        <header className="relative">
+            <img
+                src="/images/hero.jpg"
+                alt="Hero"
+                className="w-full h-[70vh] md:h-[80vh] object-cover"
+            />
 
-            <div className="hidden md:flex gap-6">
-                <a href="#" className="hover:opacity-75">
-                    <img src="public/icons/notifications.svg" alt="Notifications" className="w-6 h-6" />
-                </a>
-                <a href="#" className="hover:opacity-75">
-                    <img src="public/icons/cart.svg" alt="Cart" className="w-6 h-6" />
-                </a>
-                <a href="#" className="hover:opacity-75">
-                    <img src="public/icons/profile.svg" alt="Profile" className="w-6 h-6" />
-                </a>
+            <nav
+                className="
+          absolute top-4 left-1/2 -translate-x-1/2
+          w-[92%] max-w-6xl
+          bg-black text-white rounded-2xl
+          px-4 sm:px-6 py-3
+          flex items-center justify-between gap-4
+          shadow-lg
+        "
+            >
+                <div className="hidden sm:flex items-center gap-6">
+                    <a href="#" className="hover:opacity-80">Shop</a>
+                    <a href="#" className="hover:opacity-80">About Us</a>
+                </div>
 
-            </div>
+                <div className="text-lg sm:text-xl font-bold">Clothing Co.</div>
 
-            <button className="md:hidden p-2 border rounded">☰</button>
-        </nav>
-    )
-}
-export default Header
+                <div className="flex items-center gap-4">
+                    <a href="#" aria-label="Notifications" className="hover:opacity-80 invert">
+                        <img src="/icons/notifications.svg" alt="" className="w-5 h-5 sm:w-6 sm:h-6" />
+                    </a>
+                    <a href="#" aria-label="Cart" className="hover:opacity-80 invert">
+                        <img src="/icons/cart.svg" alt="" className="w-5 h-5 sm:w-6 sm:h-6" />
+                    </a>
+                    <a href="#" aria-label="Profile" className="hover:opacity-80 invert">
+                        <img src="/icons/profile.svg" alt="" className="w-5 h-5 sm:w-6 sm:h-6" />
+                    </a>
+                </div>
+            </nav>
+        </header>
+    );
+};
+
+export default Header;
