@@ -11,10 +11,10 @@ const Header = () => {
           shadow-lg
         "
             >
-                <div className="hidden sm:flex items-center gap-6">
-                    <a href="#" className="hover:opacity-80">Shop</a>
-                    <a href="#" className="hover:opacity-80">About Us</a>
-                </div>
+                {/*<div className="hidden sm:flex items-center gap-6">*/}
+                {/*    <a href="#" className="hover:opacity-80">Shop</a>*/}
+                {/*    <a href="#" className="hover:opacity-80">About Us</a>*/}
+                {/*</div>*/}
 
                 <div className="text-lg sm:text-xl font-bold">Clothing Co.</div>
 
