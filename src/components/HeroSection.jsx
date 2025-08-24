@@ -1,6 +1,6 @@
 const HeroSection = () => {
     return (
-        <section className="min-h-screen text-white flex flex-col items-center justify-center px-6
+        <section className="min-h-screen text-[white] flex flex-col items-center justify-center px-6
                             pt-24 lg:flex-row lg:items-center lg:pl-80 lg:pt-0">
 
             <div className="bg-white w-48 h-72 sm:w-60 sm:h-96 lg:w-[338px] lg:h-[591px] overflow-hidden shadow-lg mt-10 lg:mt-20" />
