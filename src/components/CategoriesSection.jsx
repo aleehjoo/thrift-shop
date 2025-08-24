@@ -30,20 +30,20 @@ const CategoriesSection = () => {
                 ease: "power2.out",
                 scrollTrigger: {
                     trigger: sectionRef.current,
-                    start: "top 80%", // animates when section is ~80% in view
+                    start: "top 80%",
                     toggleActions: "play none none reverse",
                 },
             });
         },
-        { scope: sectionRef } // only affects elements inside this section
+        { scope: sectionRef }
     );
 
     return (
-        <section ref={sectionRef} className="mt-32">
+        <section ref={sectionRef} className="mt-32 px-6 lg:px-16">
             <h2 className="text-3xl font-bold text-center text-white">
                 Browse by Category
             </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-16 justify-items-center">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mt-16 justify-items-center">
                 {categories.map((category, idx) => (
                     <div key={idx} className="category-card w-full">
                         <CategoryCard

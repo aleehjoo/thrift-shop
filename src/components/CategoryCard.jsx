@@ -1,5 +1,6 @@
 import React from 'react'
 import {Link} from "react-router-dom";
+import { ArrowUpRight } from "lucide-react";
 
 const CategoryCard = ({ name, image }) => {
     return (
@@ -14,6 +15,7 @@ const CategoryCard = ({ name, image }) => {
                 <Link to="/product-sample">
                     <button className="flex items-center justify-between w-full px-4 py-3 bg-[#0A0A0A] text-white font-semibold rounded-md shadow-md hover:invert transition">
                         <span>{name}</span>
+                        <ArrowUpRight className="w-5 h-5" />
                     </button>
                 </Link>
             </div>

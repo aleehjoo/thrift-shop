@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
+import { ArrowUpRight } from "lucide-react";
 
 const HeroSection = () => {
     return (
         <section className="min-h-screen text-[white] flex flex-col items-center justify-center px-6
-                            pt-24 lg:flex-row lg:items-center lg:pl-80 lg:pt-0">
+                        pt-24 lg:flex-row lg:items-center lg:pl-80 lg:pt-0">
 
             <div className="bg-white w-48 h-72 sm:w-60 sm:h-96 lg:w-[338px] lg:h-[591px] overflow-hidden shadow-lg mt-10 lg:mt-20" />
 
@@ -19,12 +20,14 @@ const HeroSection = () => {
                         outfit becomes part of your own.
                     </p>
 
-                    <Link to="/product-sample">
-                        <button className="bg-white text-black py-3 px-6 mt-8 lg:mt-12 rounded-full hover:opacity-50 transition-colors self-center lg:self-end">
-                            Shop Now
+                    <Link to="/product-sample" className="self-center lg:self-start">
+                        <button
+                            className="flex items-center justify-between gap-3 bg-white text-black py-3 px-6 mt-8 lg:mt-12 rounded-md hover:opacity-70 transition-all"
+                        >
+                            <span className="font-medium">Shop Now</span>
+                            <ArrowUpRight className="w-5 h-5" />
                         </button>
                     </Link>
-
                 </div>
             </div>
         </section>

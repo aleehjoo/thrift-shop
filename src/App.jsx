@@ -9,9 +9,8 @@ function App() {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        // Wait until everything (images, fonts, etc.) has loaded
         window.addEventListener("load", () => {
-            setTimeout(() => setLoading(false), 800); // delay for smoother exit
+            setTimeout(() => setLoading(false), 800);
         });
     }, []);
 
