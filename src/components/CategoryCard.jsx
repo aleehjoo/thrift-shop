@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from "react-router-dom";
 
 const CategoryCard = ({ name, image }) => {
     return (
@@ -10,9 +11,11 @@ const CategoryCard = ({ name, image }) => {
             />
 
             <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 w-[75%]">
-                <button className="flex items-center justify-between w-full px-4 py-3 bg-[#0A0A0A] text-white font-semibold rounded-md shadow-md hover:invert transition">
-                    <span>{name}</span>
-                </button>
+                <Link to="/product-sample">
+                    <button className="flex items-center justify-between w-full px-4 py-3 bg-[#0A0A0A] text-white font-semibold rounded-md shadow-md hover:invert transition">
+                        <span>{name}</span>
+                    </button>
+                </Link>
             </div>
         </div>
     )

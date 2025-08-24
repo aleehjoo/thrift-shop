@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const HeroSection = () => {
     return (
         <section className="min-h-screen text-[white] flex flex-col items-center justify-center px-6
@@ -17,9 +19,12 @@ const HeroSection = () => {
                         outfit becomes part of your own.
                     </p>
 
-                    <button className="bg-white text-black py-3 px-6 mt-8 lg:mt-12 rounded-full hover:opacity-50 transition-colors self-center lg:self-end">
-                        Shop Now
-                    </button>
+                    <Link to="/product-sample">
+                        <button className="bg-white text-black py-3 px-6 mt-8 lg:mt-12 rounded-full hover:opacity-50 transition-colors self-center lg:self-end">
+                            Shop Now
+                        </button>
+                    </Link>
+
                 </div>
             </div>
         </section>
