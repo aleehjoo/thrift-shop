@@ -26,12 +26,12 @@ const CategoriesSection = () => {
                 opacity: 0,
                 y: 50,
                 duration: 0.8,
-                stagger: 0.2,
+                stagger: 0.15,
                 ease: "power2.out",
                 scrollTrigger: {
                     trigger: sectionRef.current,
                     start: "top 80%",
-                    toggleActions: "play none none reverse",
+                    toggleActions: "play reset play reset",
                 },
             });
         },

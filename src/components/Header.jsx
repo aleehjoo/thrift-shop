@@ -1,9 +1,8 @@
 const Header = () => {
     return (
-        <header className=" bg-red-500">
+        <header className="sticky top-4 z-50 flex justify-center">
             <nav
                 className="
-          absolute top-4 left-1/2 -translate-x-1/2
           w-[92%] max-w-6xl
           bg-white text-black rounded-2xl
           px-4 sm:px-6 py-3
@@ -11,11 +10,6 @@ const Header = () => {
           shadow-lg
         "
             >
-                {/*<div className="hidden sm:flex items-center gap-6">*/}
-                {/*    <a href="#" className="hover:opacity-80">Shop</a>*/}
-                {/*    <a href="#" className="hover:opacity-80">About Us</a>*/}
-                {/*</div>*/}
-
                 <div className="text-lg sm:text-xl font-bold">Clothing Co.</div>
 
                 <div className="flex items-center gap-4">

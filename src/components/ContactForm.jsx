@@ -13,8 +13,8 @@ const ContactForm = () => {
     };
 
     return (
-        <section className="h-screen flex items-center justify-center">
-            <div className="max-w-4xl w-full bg-white shadow-xl rounded-2xl p-8">
+        <section className="py-20 px-6 lg:px-16 mt-16">
+            <div className="max-w-4xl w-full bg-white shadow-xl rounded-2xl p-8 mx-auto">
                 {/* Heading */}
                 <h2 className="text-3xl font-bold text-center mb-6">Get in Touch</h2>
                 <p className="text-center text-gray-600 mb-10">
