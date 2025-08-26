@@ -1,4 +1,5 @@
 import Header from "../components/Header.jsx";
+import { Link } from "react-router-dom";
 
 const ProductSample = () => {
     return (
@@ -25,9 +26,15 @@ const ProductSample = () => {
                     <p><span className="font-semibold">Price:</span> Insert price here</p>
                 </div>
 
-                <button className="bg-white text-black px-6 py-3 rounded-md hover:opacity-80 transition">
-                    Add to Card
-                </button>
+                    <button className="bg-white text-black px-6 py-3 rounded-md hover:opacity-80 transition">
+                        Add to Cart
+                    </button>
+                    <Link to="/">
+                        <button className="bg-white text-black px-6 py-3 rounded-md hover:opacity-80 transition mx-8">
+                            Back to Home
+                        </button>
+                    </Link>
+
             </div>
 
         </section>
