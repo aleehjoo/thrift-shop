@@ -9,7 +9,7 @@ const ProductSample = () => {
 
             <div className="flex-1 flex items-center justify-center">
                 <div className="bg-white w-72 h-96 sm:w-96 sm:h-[500px] rounded-md shadow-lg flex items-center justify-center text-black">
-                    Insert Image Here
+                    <img src="/images/sampleProduct.jpg" alt="Product Image" className="w-full h-full object-cover"/>
                 </div>
             </div>
 
@@ -26,7 +26,7 @@ const ProductSample = () => {
                 </div>
 
                 <button className="bg-white text-black px-6 py-3 rounded-md hover:opacity-80 transition">
-                    Insert CTA
+                    Add to Card
                 </button>
             </div>
 

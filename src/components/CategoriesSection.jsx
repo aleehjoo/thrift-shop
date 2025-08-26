@@ -17,6 +17,7 @@ const categories = [
     { name: "Accessories", image: "/images/accessories.jpg" },
 ];
 
+
 const CategoriesSection = () => {
     const sectionRef = useRef();
 
