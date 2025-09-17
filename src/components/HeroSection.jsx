@@ -17,6 +17,7 @@ const HeroSection = () => {
                     src="/images/subject.jpg"
                     alt="Hero Subject"
                     className="w-full h-full object-cover"
+                    loading="lazy" decoding="async"
                 />
             </motion.div>
 

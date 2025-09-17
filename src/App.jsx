@@ -9,9 +9,14 @@ function App() {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        window.addEventListener("load", () => {
-            setTimeout(() => setLoading(false), 800);
+        let rafId = requestAnimationFrame(() => {
+            setLoading(false);
         });
+        const timeoutId = setTimeout(() => setLoading(false), 1500);
+        return () => {
+            cancelAnimationFrame(rafId);
+            clearTimeout(timeoutId);
+        };
     }, []);
 
     return (
@@ -24,7 +29,7 @@ function App() {
                         initial={{ opacity: 1 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
-                        transition={{ duration: 0.8, ease: "easeInOut" }}
+                        transition={{ duration: 0.3, ease: "easeInOut" }}
                     >
                         <h1 className="text-3xl font-bold animate-pulse">Loading...</h1>
                     </motion.div>
@@ -32,12 +37,10 @@ function App() {
             </AnimatePresence>
 
             {/* Your actual app */}
-            {!loading && (
-                <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/product-sample" element={<ProductSample />} />
-                </Routes>
-            )}
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/product-sample" element={<ProductSample />} />
+            </Routes>
         </>
     );
 }

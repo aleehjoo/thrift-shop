@@ -10,7 +10,7 @@ const ProductSample = () => {
 
             <div className="flex-1 flex items-center justify-center">
                 <div className="bg-white w-72 h-96 sm:w-96 sm:h-[500px] rounded-md shadow-lg flex items-center justify-center text-black">
-                    <img src="/images/sampleProduct.jpg" alt="Product Image" className="w-full h-full object-cover"/>
+                    <img src="/images/sampleProduct.jpg" alt="Product Image" className="w-full h-full object-cover" loading="lazy" decoding="async"/>
                 </div>
             </div>
 

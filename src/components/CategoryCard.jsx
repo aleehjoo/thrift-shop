@@ -9,6 +9,7 @@ const CategoryCard = ({ name, image }) => {
                 src={image}
                 alt={name}
                 className="w-full h-full object-cover transform group-hover:scale-105 transition duration-500"
+                loading="lazy" decoding="async"
             />
 
             <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 w-[75%]">
